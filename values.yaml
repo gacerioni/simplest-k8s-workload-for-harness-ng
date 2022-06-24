@@ -1,0 +1,7 @@
+name: harness-example-ng
+replicas: 1
+
+image: <+artifact.image>
+
+createNamespace: true
+namespace: <+infra.namespace>
