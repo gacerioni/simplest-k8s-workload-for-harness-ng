@@ -7,10 +7,12 @@ spec:
   selector:
     matchLabels:
       app: {{.Values.name}}
+      lucas: maneiro
   template:
     metadata:
       labels:
         app: {{.Values.name}}
+        lucas: maneiro
     spec:
       {{- if .Values.dockercfg}}
       imagePullSecrets:
