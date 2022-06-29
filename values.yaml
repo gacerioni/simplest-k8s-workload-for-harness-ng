@@ -1,7 +1,7 @@
-name: harness-example-ng
+name: harness-example-cg
 replicas: 1
 
-image: <+artifact.image>
+image: ${artifact.metadata.image}
 
 createNamespace: true
-namespace: <+infra.namespace>
+namespace: ${infra.kubernetes.namespace}
