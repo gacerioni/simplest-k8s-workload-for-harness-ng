@@ -7,12 +7,10 @@ spec:
   selector:
     matchLabels:
       app: {{.Values.name}}
-      saida: stable
   template:
     metadata:
       labels:
         app: {{.Values.name}}
-        saida: stable
     spec:
       {{- if .Values.dockercfg}}
       imagePullSecrets:
