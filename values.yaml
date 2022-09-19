@@ -6,6 +6,6 @@ image: <+artifact.image>
 createNamespace: true
 namespace: <+infra.namespace>
 
-serviceType: nodePort
+serviceType: NodePort
 servicePort: 80
 serviceTargetPort: 80
